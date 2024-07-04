@@ -1,0 +1,237 @@
+:root{
+    --color-blue: #3e5fb0;
+    --color-dark1: #010101;
+    --color-dark2: #000000;
+    --color-grey1: #d9d9d8;
+    --color-grey2: #f7f7f7;
+    --color-grey3: #ffffff;
+    --color-red: #ff3131;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-blue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.header_01,
+.navigation_header,
+.header_02,
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-grey2);
+    justify-content: space-between;
+}
+
+.header_01{
+    background-color: var(--color-dark1);
+    height: 2.5em;
+    padding: 0 10%;
+}
+
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-grey2);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header_02{
+    background-color: #010101;
+    height: 4em;
+    justify-content: center;
+    padding: 0 30%;
+    padding-top: 15px;
+    align-items: center;
+}
+
+
+.searchbox{
+    gap: 3em;
+}
+
+
+.pesquisa{
+    cursor: pointer;
+    display: flex;
+    width: 300px;
+    background-color: var(--color-grey1);
+    padding: 20px;
+    height: 10px;
+    justify-content: space-between;
+    border-radius: 40px;
+    align-items: center;
+}
+
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--color-dark1);
+    width: 300px;
+    padding-right: 4px;
+}
+
+.active{
+    background-color: var(--color-grey2);
+    padding: 30%;
+    padding-left: 60%;
+    padding-right: 60%;
+    border-radius: 40px;
+}
+
+.btn_icon_shop{
+    cursor: pointer;
+}
+
+.btn_entrar a{
+    text-decoration: none;
+    align-items: center;
+    background-color: var(--color-grey2);
+    color: var(--color-dark1);
+    font-weight: bold;
+}
+
+.btn_icon_header{
+    color: var(--color-grey1);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.header_03{
+    background-color: #010101;
+    box-shadow: 1px 1px 4px var(--color-dark2);
+    height: 2em;
+    justify-content: left;
+    padding: 0 2%;
+}
+
+@media screen and (max-width:768px){
+    .btn_icon_header{
+        display: block;
+    }
+    .navigation_header{
+        position: absolute;
+        flex-direction: column;
+        top: 18vw;
+        background-color: var(--color-dark2);
+        width: 20vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw; 
+        height: 550px;
+        justify-content: space-around;
+    }
+}
+
+@keyframes showSidebar {
+    from{margin-left: -100vw;}
+    top{margin-left: -10vw;}
+}
+.content{
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+    width: 230px;
+    height: 300px;
+    display:inline;
+    z-index: 0;
+    /* background:#EFEFEF;  */
+    /* margin: auto;  */
+    /* position: relative; */
+}
+
+img{
+    box-shadow: 1px 1px 10px #999; 
+    max-height: 200px;
+    cursor: pointer;
+    vertical-align:top;
+}
+
+.scroll_01 { 
+    overflow-x:scroll;
+    overflow-y: hidden;
+    height: 345px;
+    width: max-width();
+    /* white-space:nowrap; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;    
+    padding-top: 160px;
+    scrollbar-width: none;
+} 
+
+.scroll_02{ 
+    overflow-x:scroll;
+    overflow-y: hidden;
+    height: 345px;
+    width: max-width();
+    white-space:nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;    
+    padding-top: 20px;
+    scrollbar-width: none;
+}
+.produto{
+    margin: 0 2%;
+    background:#EFEFEF; 
+    padding: 10px;
+    border-radius: 15px; 
+    height: 305px;
+    width: 250px;
+    text-align: left;
+} 
+
+.parcela {
+    text-align: center;
+    padding-top: 48px;
+    text-decoration: underline;
+
+}
+
+ol{
+    padding-top: 5px;
+}
+
+.nome{
+    font-weight: bold;
+    padding-top:3px
+}
+
+.preco{
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: small;
+    padding-top:4px ;
+}
+
+.scroll_01::-webkit-scrollbar {
+    display: none;
+}
+
+
