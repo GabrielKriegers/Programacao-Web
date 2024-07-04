@@ -1,3 +1,13 @@
+:root{
+    --color-blue: #3e5fb0;
+    --color-dark1: #010101;
+    --color-dark2: #000000;
+    --color-grey1: #d9d9d8;
+    --color-grey2: #f7f7f7;
+    --color-grey3: #ffffff;
+    --color-red: #ff3131;
+    --color-blue2: #0000cd;
+}
 
     body{
         display: flex;
@@ -28,9 +38,7 @@
         font-family: 'Bigshot';
     }
     
-    h2{ 
-        
-    }
+
 
     p{
         margin-top:20px;
@@ -45,8 +53,7 @@
         padding-left: 5px;
         height: 30px;
         width: 250px;
-        background-color: whitesmoke;
+        background-color: var(--color-grey1);
 
     }
-    .senha{
-    }
+
