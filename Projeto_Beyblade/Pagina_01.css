@@ -16,6 +16,7 @@
 body{
     background-color: var(--color-blue);
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .menu{
@@ -61,7 +62,7 @@ body{
 
 .header_02{
     background-color: #010101;
-    height: 4em;
+    height: 6em;
     justify-content: center;
     padding: 0 30%;
     padding-top: 15px;
@@ -183,31 +184,35 @@ img{
 }
 
 .scroll_01 { 
-    overflow-x:scroll;
-    overflow-y: hidden;
-    height: 345px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: auto;
     width: max-width();
-    /* white-space:nowrap; */
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:left;    
+    justify-content: left;
     padding-top: 160px;
-    scrollbar-width: none;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-blue) var(--color-dark1);
+    padding-bottom: 15px;
 } 
 
 .scroll_02{ 
-    overflow-x:scroll;
+    overflow-x: scroll;
     overflow-y: hidden;
-    height: 345px;
+    height: auto;
     width: max-width();
-    white-space:nowrap;
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:left;    
+    justify-content: left;
     padding-top: 20px;
-    scrollbar-width: none;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-blue) var(--color-dark1);
+    padding-bottom: 15px;
 }
 .produto{
     margin: 0 2%;
@@ -218,7 +223,12 @@ img{
     width: 250px;
     text-align: left;
     align-items: center;
+    transition: transform .5s ease;
 } 
+
+.produto:hover{
+    transform: scale(1.05);
+}
 
 .parcela {
     text-align: center;
@@ -250,4 +260,90 @@ ol{
 a{
     text-decoration: underline;
     color: var(--color-blue2);
+}
+
+.carrinho{
+    display: flex;
+}
+
+.produtos{
+    
+    height: 100%;
+    flex: 80%;
+    flex-direction: row;
+    padding-top: 15%;
+}
+
+.produto_carrinho{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    background-color: var(--color-grey1);
+    height: 150px;
+    width: 90%;
+    border-radius: 50px;
+    align-items: center;
+
+}
+
+p{
+    padding-top: 1%;
+}
+
+.nome_produto{
+    font-size:xx-large;
+    margin-right: 20px;
+    align-self:self-start;
+}
+
+.desconto_produto{
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: xx-large;
+    text-decoration: line-through;
+}
+
+.preco_produto{
+    color: var(--color-blue2);
+    font-weight: bold;
+}
+
+.quantidade2{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    align-self: self-start;
+    background-color: var(--color-dark2);
+    border-radius: 50px;
+    width: 200px;
+    align-self: self-start;
+}
+
+.quantidade{
+    color: var(--color-grey1);
+    font-size: larger;
+    margin: 4%;
+}
+
+.imagem{
+    height: 125px;
+    margin: 3%;
+    
+}
+
+.preco2{
+    display: flex;
+    flex-direction:column ;
+    margin-left: 5%;
+    align-items: center;
+    font-size: large;
+}
+
+.frete{
+    flex: 20%;
+    flex-direction: row;
+    padding-top: 15%;
 }
