@@ -185,7 +185,7 @@ img{
 
 .scroll_01 { 
     overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: auto;
     width: max-width();
     white-space: nowrap;
@@ -271,13 +271,15 @@ a{
     height: 100%;
     flex: 80%;
     flex-direction: row;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .produto_carrinho{
     display: flex;
     flex-direction: row;
-    margin: 5%;
+    margin-top: 10px;
+    margin-bottom: 4%;
+    margin-left: 4%;
     background-color: var(--color-grey1);
     height: 150px;
     width: 90%;
@@ -290,9 +292,13 @@ p{
     padding-top: 1%;
 }
 
+.div_nome{
+    height: 30%;
+    width: 10%;
+}
+
 .nome_produto{
-    font-size:xx-large;
-    margin-right: 20px;
+    font-size: xx-large;
     align-self:self-start;
 }
 
@@ -310,8 +316,7 @@ p{
 
 
 .quantidade2{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,8 +348,134 @@ p{
     font-size: large;
 }
 
+.barra_lateral{
+    display: flex;
+    flex: 1%;
+    flex-direction: column;
+    padding-top: 12%;
+    border-radius: 50px;
+}
+
 .frete{
-    flex: 20%;
-    flex-direction: row;
-    padding-top: 15%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey1);
+    align-items: center;
+    
+}
+
+.calculo{
+    background-color: var(--color-dark2);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: var(--color-grey1);
+    text-decoration: none;
+    font-weight:lighter;
+}
+
+.cep{
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    padding-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.pesquisa_cep{
+    cursor: pointer;
+    display: flex;
+    width: 300px;
+    background-color: var(--color-grey2);
+    padding: 20px;
+    height: 10px;
+    justify-content: space-between;
+    border-radius: 40px;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+:placeholder-shown{
+    font-size: larger;
+}
+
+.preco_frete{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.preco_palavra{
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.preco_numerico{
+    font-size: x-large;
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.calculo_total{
+    background-color: var(--color-dark2);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.produto_frete{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+
+}
+
+.preco3{
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.preco4{
+    font-size: x-large;
+    color: var(--color-red);
+    font-weight: bold;
+    
+}
+
+.total{
+    display: flex;
+    width: 95%;
+    height: 30%;    
+    align-items: end;
+    margin-bottom: 10px;
+    justify-content:space-around;
+    
+}
+
+.preco5{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.preco6{
+    display: flex;
+    font-size: 80px;
+    color: var(--color-red);
+    font-style: italic;
+    font-weight:normal;
 }
