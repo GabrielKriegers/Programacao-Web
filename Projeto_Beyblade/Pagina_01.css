@@ -19,6 +19,8 @@ body{
 
 }
 
+/*Página 1:*/
+
 .menu{
     position: fixed;
     top: 0;
@@ -167,7 +169,7 @@ body{
     /* position: relative; */
 }
 
-img{
+.imagem1{
     box-shadow: 1px 1px 10px #999; 
     max-height: 200px;
     cursor: pointer;
@@ -262,6 +264,8 @@ a{
     color: var(--color-blue2);
 }
 
+/*Página 2:*/
+
 .carrinho{
     display: flex;
 }
@@ -270,7 +274,6 @@ a{
     
     height: 100%;
     flex: 80%;
-    flex-direction: row;
     padding-top: 12%;
 }
 
@@ -478,4 +481,69 @@ h2{
     color: var(--color-red);
     font-style: italic;
     font-weight:normal;
+}
+
+
+/*Página 3:*/
+
+
+.pagina_produtos{
+    display: flex;
+    flex-direction: row;
+    padding-top:12%;
+}
+
+.descricao{
+    margin: 2px;
+    border-radius: 30px;
+    background-color: var(--color-grey1);
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    flex: 80%;
+
+}
+
+.imagem2{
+    width: 90%;
+    height: 70%;
+    flex: 60%;
+
+}
+
+.imagem3{
+    margin: 3%;
+    height: 300px;
+}
+
+.comentarios{
+    width: 30%;
+    align-items: ;
+}
+
+.nome_qnt{
+    display: flex;
+    flex-direction: row;
+}
+
+.preco_individual{
+    font-size: x-large;
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.vezes_cartao{
+    color: var(--color-blue2);
+    font-weight: bold;
+    font-size:medium;
+}
+
+.entrega{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.avaliacao{
+    font-weight: bold;
+    font-size: smaller;
 }
