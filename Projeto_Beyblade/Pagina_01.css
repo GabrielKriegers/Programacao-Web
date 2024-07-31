@@ -498,17 +498,15 @@ h2{
     border-radius: 30px;
     background-color: var(--color-grey1);
     display: flex;
-    height:100%;
     flex-direction: row;
     flex: 80%;
-
+    height: 570px;
 }
 
 .imagem2{
-    width: 90%;
+    width: 43%;
     height: 70%;
-    flex: 60%;
-
+    
 }
 
 .imagem3{
@@ -517,8 +515,7 @@ h2{
 }
 
 .comentarios{
-    width: 30%;
-    align-items: ;
+    width: 40%;
 }
 
 .nome_qnt{
@@ -535,15 +532,91 @@ h2{
 .vezes_cartao{
     color: var(--color-blue2);
     font-weight: bold;
-    font-size:medium;
+    font-size:smaller;
 }
 
 .entrega{
     font-weight: bold;
     font-size: larger;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .avaliacao{
     font-weight: bold;
     font-size: smaller;
+}
+
+.nome_qnt{
+    height: 35px;
+    width: 100%;
+}
+
+.titulo_produto{
+    max-width: 80%;
+    font-size: x-large;
+    word-wrap:none;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.qnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark2);
+    border-radius: 50px;
+    width: 200px;
+    color: white;
+}
+
+.caracteristicas{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    display: flex;
+}
+
+.caracteristica_produto{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+ul{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.descricao_div{
+}
+
+.descricao_titulo{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.descricao_detalhada{
+    text-indent: 3em;
+}
+
+.imagem4{
+    height: 60px;
+
+}
+
+.pagamento{
+    align-items: end;
+    padding-bottom: 50px;
+    bottom: 0;
+    position: fixed;
+}
+
+.pagamento_titulo{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
 }
