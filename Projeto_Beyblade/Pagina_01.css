@@ -544,7 +544,7 @@ h2{
 .titulo_produto{
     max-width: 80%;
     font-size: x-large;
-    word-wrap:none;
+    overflow-wrap: normal;
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
