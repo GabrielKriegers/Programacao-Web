@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade | Home</title>
+    <link rel="shortcut icon" href="BBB.jpeg">
+    <link rel="stylesheet" href="/Projeto_Beyblade/Pagina_01.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="header_01" id="header">
+            <div class="logo">
+                <img class="imagem1" src="b7ce55c3b03f69d589a771708d4f4b76.png" alt="Beyblade Logo">
+            </div>
+            <nav class="navigation_header" id="navigation_header">
+                <a href="#">Home</a>
+                <a href="#">Contato</a>
+                <a href="#">Outros Hobbies</a>
+                <a href="#">Acessórios</a>
+                <a href="#">Outlet</a>
+            </nav>
+        </div>
+
+        <div class="header_02">
+            <div class="searchbox">
+                <div class="pesquisa">
+                    <input type="text" class="search-txt" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--color-dark1)" class="bi bi-search" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </div>
+                <div class="btn_icon_shop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--color-grey1)" class="bi bi-cart4" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+                </div>
+                <div class="btn_entrar">
+                    <a href="#" class="active">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content" id="content" tabindex="0" onclick="closeSidebar()">
+        <div class="scroll_01">
+            <!-- Repeat this block for each product -->
+            <div class="produto">
+                <div class="foto">
+                    <img class="imagem1" src="D_NQ_NP_917747-MLU71083716045_082023-O.webp" alt="Produto">
+                </div>
+                <ol>
+                    <li class="nome">Nome</li>
+                    <li class="preco">Preço: R$99,99</li>
+                </ol>
+                <div class="parcela">
+                    <a href="#">5x sem juros</a>
+                </div>
+            </div>
+            <!-- End of product block -->
+        </div>
+
+        <div class="scroll_02">
+            <!-- Repeat this block for each product -->
+            <div class="produto">
+                <div class="foto">
+                    <img class="imagem1" src="D_NQ_NP_917747-MLU71083716045_082023-O.webp" alt="Produto">
+                </div>
+                <ol>
+                    <li class="nome">Nome</li>
+                    <li class="preco">Preço: R$99,99</li>
+                </ol>
+                <div class="parcela">
+                    <a href="#">5x sem juros</a>
+                </div>
+            </div>
+            <!-- End of product block -->
+        </div>
+    </main>
+
+    <script>
+        var navigation_header = document.getElementById('navigation_header');
+        var content = document.getElementById('content');
+        var showSidebar = false;
+
+        function toggleSidebar() {
+            showSidebar = !showSidebar;
+            if (showSidebar) {
+                navigation_header.style.marginLeft = '0'; // Ensure it's visible
+                navigation_header.style.animationName = 'showSidebar';
+                content.style.filter = 'blur(2px)';
+            } else {
+                navigation_header.style.marginLeft = '-100vw';
+                navigation_header.style.animationName = '';
+                content.style.filter = '';
+            }
+        }
+
+        function closeSidebar() {
+            if (showSidebar) {
+                toggleSidebar();
+            }
+        }
+    </script>
+</body>
+</html>
